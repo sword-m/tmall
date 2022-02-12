@@ -1,7 +1,6 @@
 #container{
     width: 520px;
     height: 280px;
-    margin: 100px auto;
     overflow: hidden;/*注意*/
     position: relative;
 }
@@ -13,12 +12,13 @@
 #list img{
     width: 520px;
     height: 280px;
+    border-radius: 12px;
     float: left;
 }
 
 .arrow{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: rgba(0, 0, 0, 0.5);
     color: #FFFFff;
     border-radius: 3px;
@@ -27,24 +27,22 @@
     top: 0;
     bottom: 0;
     margin: auto 0;
-    line-height: 40px;
+    line-height: 30px;
     font-size: 20px;
     cursor: pointer;
-    display: none;
+    display: block;
 }
 #prev{
-    left: 10px;
+    left: 0px;
+    border-radius: 0 15px 15px 0;
 }
 #next{
-    right: 10px;
+    right: 0px;
+    border-radius:15px 0 0 15px;
 }
 .arrow:hover{
     background-color:rgba(0, 0, 0, 0.7);;
 }
-#container:hover .arrow{
-    display: block;
-}
-
 
 #buttons{
     width: 100px;
