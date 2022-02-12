@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#box {
+    position: relative;
+    width: 520px;
+    height: 280px;
+    border-radius: 20px;
+    /*background-color: pink;*/
+    overflow: hidden;
+}
+#imgbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 9999px;
+    cursor: pointer;
+    height: 100%;
+    
+}
+#imgbox img {
+    width: 520px;
+    height: 280px;
+    
+    float: left;
+}
+.yuandian {
+    position: absolute;
+    left: 230px;
+    bottom: 20px;
+    width: 90px;
+    height: 15px;
+    border-radius: 20px;
+    background: rgba(255,255,255,.6);
+}
+.yuandian a {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin: 2px 0 0 7px;
+    background-color: white;
+}
+
+#jt_left {
+    left: 0;
+    border-top-right-radius:2em;
+    border-bottom-right-radius:2em;
+}
+#jt_left,
+#jt_right {
+    position: absolute;
+    top: 140px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    background: rgba(255,255,255,.6);
+}
+#jt_right {
+    right: 0;
+    border-top-left-radius:2em;
+    border-bottom-left-radius:2em;
+}
