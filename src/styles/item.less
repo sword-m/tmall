@@ -1,0 +1,243 @@
+.header {
+    width: 1263px;
+    height: 27px;
+    background-color: #f2f2f2;
+    font-size: 12px;
+    margin: 0;
+
+    >.header-site {
+        width: 990px;
+        height: 26px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+
+        >.left {
+            margin: 0 20px 0 0;
+
+            >.icon-jiating {
+                color: red;
+            }
+        }
+
+        >.right {
+            margin: 0 20px 0 0;
+
+        }
+
+        >.menu {
+            list-style: none;
+            height: 26px;
+            line-height: 26px;
+
+            .seperator {
+                width: 0;
+                height: 14px;
+                position: relative;
+                top: 6px;
+                left: 0;
+                line-height: 14px;
+                border-left: 1px solid #ccc;
+                margin: 0 2px 0 5px;
+            }
+
+            .support {
+                .menu-top {
+                    position: relative;
+                    padding: 0 19px 0 12px;
+
+                    b {
+                        position: absolute;
+                        right: 10px;
+                        top: 6px;
+                        width: 0;
+                        height: 0;
+                        border-width: 3px;
+                        border-style: solid dashed dashed;
+                        border-color: #bbb transparent transparent;
+                        font-size: 0;
+                        line-height: 0;
+                    }
+                }
+
+                .menu-bottom {
+                    position: absolute;
+                    z-index: 10;
+                    display: none;
+                    right: 165px;
+
+                    .top {
+                        padding: 6px 6px;
+                        border-bottom: 1px dashed gray;
+
+                        span {
+                            display: block;
+                            font-style: bold;
+                        }
+
+                        a {
+                            padding-left: 5px;
+                        }
+
+                    }
+
+                    .bottom {
+                        padding: 6px 6px;
+                        border-bottom: 1px dashed gray;
+                        margin-bottom: 10px;
+
+                        span {
+                            display: block;
+                            font-style: bold;
+                        }
+                    }
+                }
+            }
+
+            .support:hover {
+
+                .taobaomenu,
+                .menu-top {
+                    background-color: #fff;
+                }
+
+                .menu-bottom {
+                    display: block;
+                    background-color: white;
+                    padding: 0 18px;
+                }
+
+                b {
+                    top: 3px;
+                    border-style: dashed dashed solid dashed;
+                    border-color: transparent transparent #bbb transparent;
+                }
+            }
+
+            .taobaostar {
+                .menu-top {
+                    position: relative;
+                    padding: 0 19px 0 12px;
+
+                    b {
+                        position: absolute;
+                        right: 10px;
+                        top: 6px;
+                        width: 0;
+                        height: 0;
+                        border-width: 3px;
+                        border-style: solid dashed dashed;
+                        border-color: #bbb transparent transparent;
+                        font-size: 0;
+                        line-height: 0;
+                    }
+                }
+
+                .menu-bottom {
+                    position: absolute;
+                    display: none;
+                    padding: 0 18px;
+
+                    a {
+                        display: block;
+                    }
+                }
+            }
+
+            .mytaobao {
+                margin: 0 0 0 150px;
+
+                .menu-top {
+                    position: relative;
+                    padding: 0 19px 0 12px;
+
+                    b {
+                        position: absolute;
+                        right: 10px;
+                        top: 6px;
+                        width: 0;
+                        height: 0;
+                        border-width: 3px;
+                        border-style: solid dashed dashed;
+                        border-color: #bbb transparent transparent;
+                        font-size: 0;
+                        line-height: 0;
+                    }
+                }
+
+                .menu-bottom {
+                    position: absolute;
+                    display: none;
+                    padding: 0 18px;
+
+                    a {
+                        display: block;
+                    }
+                }
+            }
+
+            .mytaobao:hover {
+                .taobaomenu {
+                    background-color: #fff;
+                }
+
+                .menu-bottom {
+                    display: block;
+                    background-color: white;
+                }
+
+                b {
+                    top: 3px;
+                    border-style: dashed dashed solid dashed;
+                    border-color: transparent transparent #bbb transparent;
+                }
+            }
+
+            .taobaostar:hover {
+                .taobaomenu {
+                    background-color: #fff;
+                }
+
+                .menu-bottom {
+                    display: block;
+                    background-color: white;
+                }
+
+                b {
+                    top: 3px;
+                    border-style: dashed dashed solid dashed;
+                    border-color: transparent transparent #bbb transparent;
+                }
+            }
+
+            li {
+                float: left;
+                padding: 0 10px;
+
+                a:hover {
+                    text-decoration: underline;
+                    color: red;
+                }
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #999;
+        line-height: 26px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: red;
+    }
+
+    .icon-shouji {
+        color: red;
+    }
+
+    .icon-gouwuche-tianchong {
+        color: red;
+    }
+}
