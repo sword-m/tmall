@@ -190,3 +190,144 @@
 .header .icon-gouwuche-tianchong {
   color: red;
 }
+.header-second {
+  width: 1190px;
+  height: 90px;
+  margin: 0 auto;
+}
+.header-second .logo {
+  width: 240px;
+  height: auto;
+  padding-top: 16px;
+  float: left;
+  z-index: 9;
+  line-height: 64px;
+  position: relative;
+}
+.header-second .logo a {
+  height: 30px;
+  font-size: 22px;
+  width: 190px;
+  overflow: hidden;
+  height: auto!important;
+  overflow: inherit!important;
+  font-size: 0!important;
+  padding: 0 0 0 40px;
+  margin-top: 10px;
+  display: block;
+}
+.header-second .logo a img {
+  width: 130px;
+  height: 48px;
+}
+.header-second .place {
+  float: left;
+  position: relative;
+  top: 25px;
+  z-index: 11;
+  background-color: #fff;
+  margin-top: 36px;
+  max-width: 464px;
+  border-radius: 0 3px 3px;
+}
+.header-second .place h3 {
+  color: #30b30e;
+  position: relative;
+  padding: 6px 12px;
+  font-size: 16px;
+  border: 1px solid #e5e5e5;
+  line-height: 1.5;
+  margin-top: -36px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  cursor: pointer;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-width: 100px;
+  margin-left: -1px;
+  background-color: #fff;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.header-second .search {
+  width: 540px;
+  height: 36px;
+  float: right;
+  padding-top: 25px;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+}
+.header-second .search .search-1 {
+  height: 30px;
+  vertical-align: middle;
+  border: solid #30b30e;
+  border-width: 3px 0 3px 3px;
+}
+.header-second .search .search-1 input {
+  color: #000;
+  font-size: 12px;
+  margin: 0;
+  z-index: 2;
+  width: 289px;
+  height: 20px;
+  line-height: 20px;
+  padding: 5px 3px 5px 5px;
+  outline: 0;
+  border: none;
+  font-weight: 900;
+}
+.header-second .search button {
+  position: absolute;
+  right: 0;
+  top: 28px;
+  width: 90px;
+  border: 0;
+  font-size: 16px;
+  letter-spacing: 4px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #30b30e;
+  height: 30px;
+  overflow: hidden;
+  font-family: '\5FAE\8F6F\96C5\9ED1', arial, "\5b8b\4f53";
+}
+.header-second .header-banner {
+  padding-left: 9px!important;
+  padding-top: 21px!important;
+  width: 272px!important;
+  height: auto!important;
+  float: right;
+  padding: 10px 0 0 100px;
+}
+.header-second .header-banner .market {
+  text-align: right;
+  margin-right: 5px;
+  list-style: none;
+}
+.header-second .header-banner .market li {
+  margin: 0 4px;
+  font-size: 12px;
+  vertical-align: middle;
+  padding-top: 10px;
+  float: left;
+}
+.header-second .header-banner .market li a {
+  color: #666;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.header-second .header-banner .market li a i {
+  font-weight: 400;
+  text-align: right;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #30b30e;
+  text-decoration: none;
+}
+.header-second .header-banner .market li a img {
+  vertical-align: middle;
+  padding-top: -20px;
+}
