@@ -1,0 +1,102 @@
+.divpanel {
+  width: 350px;
+  min-height: 350px;
+  padding: 25px 25px 23px;
+  color: #6c6c6c;
+  background: #fff;
+  position: relative;
+  margin: 0 auto;
+}
+.divpanel .paneltitle {
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 4px;
+  margin: 8px 0;
+  zoom: 1;
+}
+.divpanel .paneltitle .loginitem-password {
+  height: 18px;
+  line-height: 5px;
+  font-size: 16px;
+  color: #3c3c3c;
+  margin: 9px 10px 0 0;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+}
+.divpanel .paneltitle .active {
+  border-bottom: 2px solid #000;
+}
+.divpanel .paneltitle .loginitem-message {
+  height: 18px;
+  line-height: 5px;
+  font-size: 16px;
+  color: #3c3c3c;
+  margin: 9px 10px 0 0;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+}
+.divpanel .panelcontent .contenbox1 {
+  display: none;
+}
+.divpanel .panelcontent .contenbox1 .passwordlogin .active {
+  border: 1px solid #ff0036;
+}
+.divpanel .panelcontent .contenbox1 .passwordlogin .fm-field {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.divpanel .panelcontent .contenbox1 .passwordlogin .fm-field .fm-label-icon {
+  width: 40px;
+  height: 43px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: 1px;
+  bottom: 1px;
+  background-color: #ccc;
+}
+.divpanel .panelcontent .contenbox1 .passwordlogin .fm-field .fm-label-icon i {
+  font-size: 24px;
+}
+.divpanel .panelcontent .contenbox1 .passwordlogin .fm-field .input-plain-wrap .fm-text {
+  width: 85%;
+  border: 1px solid #ccc;
+  height: 42px;
+  outline: none;
+  font-size: 14px;
+  padding-left: 50px;
+}
+.divpanel .panelcontent .contenbox1 .passwordlogin .fm-btn .fm-button {
+  border-color: #ff0036;
+  font-size: 16px;
+  background-color: #ff0036;
+  border-radius: 3px;
+  font-size: 20px;
+  height: 42px;
+  line-height: 42px;
+  outline: none;
+  color: #fff;
+  width: 100%;
+  cursor: pointer;
+}
+.divpanel .panelcontent .contenbox1 .passwordlogin .login-blocks {
+  margin-top: 16px;
+  margin-bottom: 0;
+  margin: 8px 0;
+  text-align: right;
+  zoom: 1;
+}
+.divpanel .panelcontent .contenbox1 .passwordlogin .login-blocks a {
+  color: #6c6c6c;
+  font-size: 12px;
+  display: inline-block;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.divpanel .panelcontent .show {
+  display: block;
+}
