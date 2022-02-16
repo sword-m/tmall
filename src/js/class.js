@@ -39,17 +39,17 @@ Scale.prototype.init=function(){
         }
     }
     //5.点击左右按钮进行切换。
-    this.showlistlength=6;//li显示的长度是6
-    if(this.listli.length<=this.showlistlength){
-        this.btnright.style.color='#fff';
-    }
-    this.btnright.onclick=function(){
-        _this.rightclick();
-    }
+    // this.showlistlength=6;//li显示的长度是6
+    // if(this.listli.length<=this.showlistlength){
+    //     this.btnright.style.color='#fff';
+    // }
+    // this.btnright.onclick=function(){
+    //     _this.rightclick();
+    // }
     
-    this.btnleft.onclick=function(){
-        _this.leftclick();
-    }
+    // this.btnleft.onclick=function(){
+    //     _this.leftclick();
+    // }
     
 };
 
