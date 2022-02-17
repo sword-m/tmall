@@ -16,6 +16,8 @@ $(function () {
       let h1=$('.tb-wrap .tb-detail-hd h1');
       let price=$('.tb-wrap .tm-fcs-panel .tm-promo-panel .tm-promo-price .tm-price');
       let num=$('.tb-wrap .shul .ll .l');
+      let numbercount=$('.tb-wrap .shul #numbercount');
+
       num.html('库存'+res.num+'件');
       price.html(res.price);
       h1.html(res.title);
@@ -28,6 +30,9 @@ $(function () {
       imgs.forEach((ele,i)=> {
           $(imgs[i]).attr('src',pic[i+4].src);
       });
+      $('.addlist #J_LinkBasket').on('click',function(){
+        addItem(res.id, numbercount.val());
+      })
     //   let template = `
     //   <h1>${res.title}</h1>
     //   <div class="picture">
@@ -51,5 +56,32 @@ $(function () {
     }).catch(xhr => {
       console.log(xhr.status);
     });
+
   
   });
+  function addItem(id, num) {
+    let product = { id, num };
+    let shop = cookie.get('shop'); // 从cookie中读取shop
+    // 在cookie中读取到的数据是字符串类型
+    // 判断当前购物车是否有数据
+    if (shop) {
+      // 购物车已有数据
+      shop = JSON.parse(shop);
+      // 判断当前商品在购物车中是否已经存在 如果存在则修改数量 不存在则添加
+      if (shop.some(el => el.id == id)) {
+        // 判断出商品存在 需要修改这个商品id对应的num数据
+        let index = shop.findIndex(elm => elm.id == id); // 找到当前商品的索引
+        let count = parseInt(shop[index].num); // 当前该商品的数量
+        count += parseInt(num);
+        shop[index].num = count;
+      } else {
+        shop.push(product);
+      }
+  
+    } else {
+      shop = [];
+      shop.push(product);
+    }
+  
+    cookie.set('shop', JSON.stringify(shop));
+  }
