@@ -1,6 +1,6 @@
 <?php
   // header('content-type:text/html;charset=utf-8');
-
+  // header('Content-Type:text/html;charset=utf-8');
   // $_GET[]     用于接收 http请求 发送的get数据
   // $_POST[]    用于接收 http请求 发送的post数据
   // $_REQUEST[] 用于接收 http请求 发送的get/post数据
@@ -32,7 +32,7 @@
   // 没有查找到结果 说明用户名或密码错误  ——> 登录失败
 
   // 1. 连接数据库
-  include('./library/conn.php'); // 加载一个php文件
+  include('./library/conn1.php'); // 加载一个php文件
 
   // 2. 接收数据
   $username = $_REQUEST['username'];
@@ -40,7 +40,8 @@
 
   // 3. 查询数据
   $sql = "select * from student where username='$username' and password='$password'";
-
+  // $message1='<script>alert("登录成功");</script>';
+  // $message2='<scrip>alert("登录失败 ");</script>';
   $results = $mysql->query($sql);
 
   $mysql->close(); // 关闭数据库连接
@@ -49,7 +50,7 @@
 
   if($results->num_rows>0){
     echo '<script>alert("登录成功");</script>';
-    echo '<script>location.href="../src/login.html";</script>';
+    echo '<script>location.href="../src/index.html";</script>';
   }else{
     echo '<script>alert("登录失败");</script>';
     echo '<script>location.href="../login.html";</script>';
